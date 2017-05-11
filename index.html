@@ -12,11 +12,45 @@
           <h2>Hit the Submit button to generate a gameboard</h2>
           <form id="formOne">
             <div class="form-group">
-              <label for="userInput">Message</label>
-              <input type="text" class="form-control" id="userInput">
-            </div>
+              <p>Choose Size:</p>
+              <select class="form-control" id="userInputSize">
+                <option>X-large</option>
+                <option>Large</option>
+                <option>Kombucha</option>
+                <option>Water</option>
+              </select>
+              <br>
+              <p>Choose Sauce:<p>
+              <select class="form-control" id="userInputSauce">
+                <option>Marinara</option>
+                <option>White</option>
+                <option>Pesto</option>
+                <option>Robust Tomato</option>
+              </select>
+              <br>
+              <p>Choose Crust Option:</p>
+              <select class="form-control" id="userInputCrust">
+                <option>Hand Tossed</option>
+                <option>Booklyn</option>
+                <option>Deep Dish</option>
+                <option>Thin</option>
+              </select>
+              <br>
+              <p>Choose Your Toppings:</p>
+              <div class= "form" id="userInputVeggieTopping">
+                <input type="checkbox" name="topping-veggie" value="bell-pepper"> bell pepper<br>
+                <input type="checkbox" name="topping-veggie" value="mushrooms"> mushroom<br>
+                <input type="checkbox" name="topping-veggie" value="onion"> onion<br>
+                <input type="checkbox" name="topping-veggie" value="olives"> olives<br>
+                <input type="checkbox" name="topping-veggie" value="pineapple"> pineapple<br>
+                <input type="checkbox" name="topping-veggie" value="spinach"> spinach<br>
+              </div>
+
+
             <button type="submit" class="btn">Add</button>
           </form>
+
+
 
           <h2>Output</h2>
           <p id="output">
